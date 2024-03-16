@@ -8,7 +8,7 @@ public class DataHandler {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     private static final String db_url = "jdbc:mysql://localhost:3306/Assignment";
     private static final String user = "root";
-    private static final String pass = "03279891zxj";
+
     private Statement st;
     private static DataHandler dataHandler = null;
 
