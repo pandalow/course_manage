@@ -1,0 +1,144 @@
+:root {
+    /* Color scheme for galaxy theme */
+    --bg-color: #0D1B2A;
+    --text-color: #FFFFFF;
+    --primary-color: #1B263B;
+    --accent-color: #415A77;
+    --highlight-color: #778DA9;
+    --error-color: #E0E1DD;
+}
+
+/* Resetting margins and paddings for a consistent look */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Change to vertical layout */
+    align-items: center; /* Center children horizontally */
+    min-height: 100vh;
+}
+
+div {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    width: 80%; /* Adjust width to your preference */
+    margin-bottom: 20px; /* Space between divs */
+}
+
+/* 标题样式 h1 至 h5，简化颜色方案以匹配银河风格背景 */
+h1, h2, h3, h4, h5 {
+    margin-bottom: 0.8em; /* 增加标题下的空间 */
+    color: #CCCCCC; /* 浅灰色，以确保足够的对比度 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 增加文字的立体感 */
+    line-height: 1.4; /* 增加行距 */
+}
+
+h1 {
+    font-size: 2.25em; /* 调整标题大小 */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+
+input[type="submit"], input[type="reset"] {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: var(--highlight-color);
+}
+
+input[type="text"], input[type="password"],input[type="number"] {
+    width: calc(100% - 24px); /* Adjust input width */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid var(--accent-color);
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        width: 90%; /* Adjust for smaller screens */
+    }
+}
+/* 按钮基本样式 */
+button {
+    background: linear-gradient(145deg, #4f8, #4cf);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+/* 按钮悬停样式 */
+button:hover {
+    background: linear-gradient(145deg, #4cf, #4f8);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* 按钮点击样式 */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 根据需要调整 */
+@media (max-width: 768px) {
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
